@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+.readMoreButton:hover{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+
+.principal{
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 80px;
+    margin-top: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+.initialInfo{
+    font-family: 'Roboto Mono', monospace;
+    color: orange;
+    font-size: 30px;
+    text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.descriptionInfo{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: #cfcfcf;
+}
+
+.icon{
+    color: orange;
+    margin: 70px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.icons{
+    margin:auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.icon-image{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100px;
+}
+
+
+@media (max-width: 700px){
+    .icons{
+        padding: 0px;
+        width: 100%;
+        margin-left: 14px;
+    }
+
+    .icon{
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 40px;
+        margin-bottom: 0px;
+        width: 40px;
+        text-align: center;
+    }
+
+    .icon-image{
+        width: 40px;
+    }
+    
+    .initialInfo{
+        font-size: 26px;
+        text-align: left;
+    }
+
+    .descriptionInfo{
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: left;
+    }
+
+    .principal{
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 0px;
+    }
+
+  }
+
+  @media (min-width: 700px) and (max-width: 1000px){
+    .icons{
+        padding: 0px;
+        width: 100%;
+        margin-left: 14px;
+    }
+
+    .icon{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 40px;
+        margin-bottom: 80px;
+        width: 140px;
+        text-align: center;
+    }
+
+    .icon-image{
+        width: 120px;
+    }
+    
+    .initialInfo{
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .descriptionInfo{
+        font-size: 24px;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: left;
+    }
+
+    .principal{
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding: 0px;
+    }
+
+  }
+
+.webDeveloper{
+    color: orange;
+}

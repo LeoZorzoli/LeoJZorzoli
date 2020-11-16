@@ -1,0 +1,57 @@
+
+.principalProjects{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.projectName{
+  color: orange;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+}
+
+.projectDescription {
+    color: #cfcfcf;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.project{
+  text-align: center;
+}
+
+.link{
+  color: orange;
+  font-family: 'Hind Siliguri', sans-serif;
+  margin: 2px;
+}
+
+.link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.tecnologies{
+  color: white;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+@media (max-width: 769px){
+  .principalProjects{
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .projectName{
+    font-size: 22px;
+  }
+
+  .projectDescription {
+    font-size: 20px;
+  }
+
+  .link ,.tecnologies{
+    font-size: 18px;
+  }
+}
