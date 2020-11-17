@@ -7,6 +7,7 @@ import wikipedia from '../../assets/projects/wikipedia.jpg'
 
 const projectsList = [
     {
+        id: 1,
         name: '01. Books',
         src: books,
         description: `In this project, i have build a book review website where the users will be able to search for books,
@@ -17,6 +18,7 @@ const projectsList = [
         demo: 'https://leo-books.herokuapp.com/',
     },
     {
+        id: 2,
         name: '02. Commerce',
         src: commerce,
         description: `In this project I made the representation of an e-commerce for bids where multiple users can bid for the same item.`,
@@ -25,6 +27,7 @@ const projectsList = [
         demo: 'https://leo-commerce.herokuapp.com/',
     },
     {
+        id: 3,
         name: '03. ChatApp',
         src: chatapp,
         description: `ChatApp is a Slack-like application of a real-time chat where multiple users can communicate with each other through a channel.`,
@@ -33,6 +36,7 @@ const projectsList = [
         demo: 'https://leo-flack.herokuapp.com/',
     },
     {
+        id: 4,
         name: '04. Social Network',
         src: network,
         description: `In this project I create a social network website to read other people's posts and share yours.`,
@@ -41,6 +45,7 @@ const projectsList = [
         demo: 'https://leo-network.herokuapp.com/',
     },
     {
+        id: 5,
         name: '05. Newspaper',
         src: newspaper,
         description: `In this project I made the implementation of a newspaper using API's to obtain news from other newspapers in the world and share them.`,
@@ -49,6 +54,7 @@ const projectsList = [
         demo: 'https://leo-newspaper.herokuapp.com/',
     },
     {
+        id: 6,
         name: '06. Wikipedia',
         src: wikipedia,
         description: `In this project I create an online encyclopedia like Wikipedia. 

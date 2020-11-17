@@ -1,0 +1,31 @@
+.blog{
+    text-align: center;
+    padding: 40px;
+}
+
+.linkBlog{
+    font-size: 28px;
+    color: orange;
+}
+
+.linkBlog:hover{
+    color:#ededed;
+    text-decoration: none;
+}
+
+.blogDescription{
+    color: white;
+    font-size: 26px;
+}
+
+@media (max-width: 769px){
+    .linkBlog{
+        font-size: 20px;
+    }
+
+    .blogDescription{
+        color: white;
+        font-size: 18px;
+    }
+    
+}

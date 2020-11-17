@@ -23,6 +23,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarLinks">
                     <ul className="navbar-nav ml-auto navbar-right">
                         <NavLink className="pill linkStyle" to="/aboutme">About Me</NavLink >
+                        <NavLink className="pill linkStyle" to="/blogs">Blogs</NavLink >
                         <NavLink className="pill linkStyle" to="/projects">Projects</NavLink >
                         <div className="redNavbar">
                             <NavLink to="https://twitter.com/ProgramandoM" className="pill linkStyle"><i className="fa fa-twitter"></i></NavLink>
