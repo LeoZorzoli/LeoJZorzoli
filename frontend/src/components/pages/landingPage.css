@@ -58,16 +58,16 @@
     }
 
     .icon{
-        font-size: 10px;
+        font-size: 16px;
         margin-left: 10px;
-        margin-right: 40px;
+        margin-right: 80px;
         margin-bottom: 0px;
-        width: 40px;
+        width: 80px;
         text-align: center;
     }
 
     .icon-image{
-        width: 40px;
+        width: 80px;
     }
     
     .initialInfo{
@@ -76,7 +76,7 @@
     }
 
     .descriptionInfo{
-        font-size: 16px;
+        font-size: 20px;
         font-family: 'Ubuntu', sans-serif;
         text-align: left;
     }
