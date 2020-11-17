@@ -13,5 +13,12 @@ code {
     monospace;
 }
 
+::selection {
+  background: #ffedba; 
+}
+
+::-moz-selection {
+background: #ffedba; 
+}
 
 
