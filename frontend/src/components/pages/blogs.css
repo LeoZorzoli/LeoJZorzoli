@@ -3,8 +3,14 @@
     padding: 40px;
 }
 
-.linkBlog{
+.blogTitle{
+    color: orange;
     font-size: 28px;
+    margin-top: 10px;
+}
+
+.linkBlog{
+    font-size: 18px;
     color: orange;
 }
 
@@ -16,6 +22,10 @@
 .blogDescription{
     color: white;
     font-size: 26px;
+}
+
+.blogReadTime{
+    color: white;
 }
 
 @media (max-width: 769px){

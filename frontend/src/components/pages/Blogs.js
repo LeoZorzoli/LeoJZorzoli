@@ -13,6 +13,8 @@ const Blogs = () => {
                         src={blog.src} 
                         img={blog.img} 
                         description={blog.description} 
+                        read={blog.read}
+                        date={blog.date}
                     />
                 )}
             </div>
