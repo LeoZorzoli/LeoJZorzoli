@@ -36,6 +36,10 @@
   font-family: 'Roboto Mono', sans-serif;
 }
 
+.img-project{
+  border: 1px solid grey;
+}
+
 @media (max-width: 769px){
   .principalProjects{
     margin-top: 80px;

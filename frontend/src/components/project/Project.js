@@ -4,7 +4,7 @@ import '../pages/projects.css'
 const Project = (props) => {
     return(
         <div className="col-md-12 col-sm-12 col-lg-4 project">
-            <img src={props.src} alt={props.name} className="img-project img-fluid img-responsive rounded" width="600"/>
+            <img src={props.src} alt={props.name} className="img-project img-fluid img-responsive rounded" width="500"/>
             <p className="projectName">{props.name}</p>
             <p className="projectDescription">{props.description}</p>
             <p className="tecnologies">{props.tecnologies}</p>
