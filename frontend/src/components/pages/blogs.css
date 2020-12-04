@@ -1,5 +1,6 @@
 .blog{
     width: 500px;
+    margin: 10px 0px 10px 0px;
 }
 
 .blog-info{
@@ -45,8 +46,15 @@
     }
 
     .blogDescription{
-        color: white;
+        font-size: 16px;
+    }
+
+    .blogTitle{
         font-size: 18px;
+    }
+
+    .linkBlog{
+        font-size: 16px;
     }
     
 }
