@@ -16,7 +16,7 @@ const projectsList = [
         name: 'Markdown2 + Django',
         src: 'https://zorzolileonel.medium.com/markdown2-django-dbd59d83e172',
         img: markdown,
-        description: `A simple tutorial on how to use markdown2 with django for project one of the CS50’s Web Programming with Python and JavaScript course.`,
+        description: `How to use markdown2 with django for project one of the CS50’s Web course.`,
         read: '3 min',
         date: '18/11/20'
     },

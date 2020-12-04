@@ -1,12 +1,20 @@
 .blog{
-    text-align: center;
-    padding: 40px;
+    width: 500px;
+}
+
+.blog-info{
+    background-color: #171f2b;
+    padding: 4px 10px 4px 10px;
+    border-bottom: 1px  solid #37345c;
+    border-left: 1px  solid #37345c;
+    border-right: 1px  solid #37345c;
 }
 
 .blogTitle{
     color: orange;
-    font-size: 28px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .linkBlog{
@@ -20,12 +28,15 @@
 }
 
 .blogDescription{
-    color: white;
-    font-size: 26px;
+    color: #ededed;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 .blogReadTime{
-    color: white;
+    color: #e8e8e8;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14px;
+    margin: 4px 0px 4px 0px;
 }
 
 @media (max-width: 769px){

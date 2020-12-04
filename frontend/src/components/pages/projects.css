@@ -1,29 +1,30 @@
 
 .principalProjects{
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.projectName{
-  color: orange;
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: 10px;
-}
-
-.projectDescription {
-    color: #cfcfcf;
-    font-family: 'Ubuntu', sans-serif;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .project{
-  text-align: center;
+  margin: 10px 0px 10px 0px;
+  width: 500px;
+}
+
+.projectName{
+  margin: 0px;
+  color: orange;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.projectDescription {
+  color: #ededed;
+  font-family: 'Hind Siliguri', sans-serif;
 }
 
 .link{
   color: orange;
   font-family: 'Hind Siliguri', sans-serif;
-  margin: 2px;
+  margin: 6px;
 }
 
 .link:hover{
@@ -31,31 +32,39 @@
   color: white;
 }
 
-.tecnologies{
-  color: white;
-  font-family: 'Roboto Mono', sans-serif;
+.links{
+  text-align: right;
 }
 
-.img-project{
-  border: 1px solid grey;
+.tecnologies{
+  color: #e8e8e8;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 14px;
+  margin: 4px 0px 4px 0px;
+}
+
+.project-info{
+  background-color: #171f2b;
+  padding: 4px 10px 4px 10px;
+  border-bottom: 1px  solid #37345c;
+  border-left: 1px  solid #37345c;
+  border-right: 1px  solid #37345c;
 }
 
 @media (max-width: 769px){
   .principalProjects{
     margin-top: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   
   .projectName{
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .projectDescription {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .link ,.tecnologies{
-    font-size: 18px;
+    font-size: 14px;
   }
 }
