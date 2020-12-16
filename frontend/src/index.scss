@@ -1,5 +1,7 @@
+@import './utilities/variables';
+
 body {
-  background-color:#141d26;
+  background-color: $background-color;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,11 +16,11 @@ code {
 }
 
 ::selection {
-  background: #ffedba; 
+  background: #f0e6e7; 
 }
 
 ::-moz-selection {
-background: #ffedba; 
+background: #f0e6e7; 
 }
 
 

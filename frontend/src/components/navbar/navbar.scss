@@ -1,0 +1,85 @@
+@import '../../utilities/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+.active{
+    text-decoration: underline;
+}
+
+.text-navbar{
+    font-family: $principal-font;
+}
+
+.navbar-icon{
+    color: black ;
+    font-size: 22px;
+    margin: 0px 4px 0px 4px;
+}
+
+.navbar-icon:hover{
+    color: #454545;
+}
+
+.logo:hover{
+    text-decoration-color: $principal-color;
+}
+
+.text1 {
+    margin: 0px;
+    font-size: 22px;
+    color: grey;
+}
+
+.text2 {
+    margin: 0px;
+    font-size: 34px;
+    color: $principal-color
+}
+
+.text3 {
+    font-size: 24px;
+    color: $principal-color
+}
+
+.flex-column{
+    margin-top: 30px;
+}
+
+.link-navbar{
+    color: $principal-color;
+    font-size: 22px;
+}
+
+.link-navbar:hover{
+    text-decoration: none;
+    color: #454545;
+}
+
+.principalNavbar{
+    padding: 80px 40px 0px 0px;
+    margin-top: 40px;
+    text-align: right;
+}
+
+.navbarExp{
+    padding: 10px 0px 10px 0px;
+}
+
+.iconNavbar{
+    color: $principal-color;
+} 
+
+@media (max-width: 769px) {
+    .link-navbar{
+        text-align: center;
+    }
+
+    .my-info{
+        text-align: center;
+    }
+
+    .toggler{
+        margin: auto;
+        text-align: center !important;
+    }
+}

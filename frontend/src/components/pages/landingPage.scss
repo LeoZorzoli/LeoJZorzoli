@@ -1,7 +1,9 @@
+@import '../../utilities/variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 .readMoreButton:hover{
-    background-color: orange;
+    background-color: $principal-color;
     color: white;
     text-decoration: none;
 }
@@ -14,24 +16,24 @@
     margin-top: 40px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 .initialInfo{
-    font-family: 'Roboto Mono', monospace;
-    color: orange;
-    font-size: 30px;
-    text-align: right;
+    font-family: $principal-font;
+    color: $principal-color;
+    font-size: 32px;
+    text-align: left;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .descriptionInfo{
-    font-size: 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-family: $principal-font;
     text-align: left;
-    color: #cfcfcf;
+    color: #636363;
 }
+
 
 .icon{
-    color: orange;
+    color: $principal-color;
     margin: 70px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -131,5 +133,5 @@
   }
 
 .webDeveloper{
-    color: orange;
+    color: $principal-color;
 }
