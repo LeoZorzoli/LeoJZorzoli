@@ -23,7 +23,7 @@ const NavbarComponent = () => {
                 <a href="https://www.linkedin.com/in/leonelzorzoli/" target="_blank" rel="noreferrer"><i className="fa fa-linkedin-square navbar-icon"></i></a>
                 <a href="https://github.com/LeoZorzoli" target="_blank" rel="noreferrer"><i className="fa fa-github navbar-icon"></i></a>
             </div>
-            <Navbar className="navbarExp" expand="md">
+            <Navbar className="navbarExp" expand="xl">
                 <Navbar.Toggle className="toggler" aria-controls="navbar" />
                 <Navbar.Collapse id="navbar">
                     <Nav className="flex-column ml-auto">

@@ -17,10 +17,10 @@ function App() {
     <Container>
       <Router>
           <Row>
-            <Col xl={5} xs={12} md={5}>
+            <Col xl={5} xs={12} md={12}>
               <Navbar />
             </Col>
-            <Col xl={6} xs={12} md={6} className="principal">
+            <Col xl={6} xs={12} md={12} className="principal">
               <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route path="/bio" component={BioPage} />

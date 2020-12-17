@@ -52,7 +52,7 @@
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 1024px){
     .icons{
         padding: 0px;
         width: 100%;
@@ -93,45 +93,6 @@
 
   }
 
-  @media (min-width: 700px) and (max-width: 1000px){
-    .icons{
-        padding: 0px;
-        width: 100%;
-        margin-left: 14px;
-    }
-
-    .icon{
-        font-size: 18px;
-        margin-left: 10px;
-        margin-right: 40px;
-        margin-bottom: 80px;
-        width: 140px;
-        text-align: center;
-    }
-
-    .icon-image{
-        width: 120px;
-    }
-    
-    .initialInfo{
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .descriptionInfo{
-        font-size: 24px;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: left;
-    }
-
-    .principal{
-        top: 0;
-        left: 0;
-        height: 100%;
-        padding: 20px;
-    }
-
-  }
 
 .webDeveloper{
     color: $principal-color;
