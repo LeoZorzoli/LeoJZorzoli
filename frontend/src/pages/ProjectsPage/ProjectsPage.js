@@ -2,7 +2,7 @@ import React from 'react';
 import projectList from '../../utilities/projectsList';
 import './ProjectsPage.scss'
 
-import { Col, Row, NavLink, Accordion, Button, Card } from 'react-bootstrap'
+import { Col, NavLink, Accordion, Card } from 'react-bootstrap'
 
 const Project = ({ project }) => {
     return (

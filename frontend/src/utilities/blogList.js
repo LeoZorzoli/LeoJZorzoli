@@ -1,7 +1,4 @@
-import firebase from '../../assets/blogs/firebase.png'
-import markdown from '../../assets/blogs/markdown.png'
-
-const projectsList = [
+const blogsList = [
     {
         id: 1,
         name: 'React App to Firebase',
@@ -22,4 +19,4 @@ const projectsList = [
     },
 ]
 
-export default projectsList
+export default blogsList
