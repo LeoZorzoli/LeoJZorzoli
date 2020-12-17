@@ -14,7 +14,7 @@ const Tecnology = ({tecnology}) => {
 
 const TecnologiesPage = () => {
     return (
-        <div>
+        <div className="animate__animated animate__fadeIn">
             <Row>
                 {tecnologiesList.map(tec => 
                     <Tecnology key={tec.id} tecnology={tec}/>

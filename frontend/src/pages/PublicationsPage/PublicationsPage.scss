@@ -1,0 +1,51 @@
+@import '../../utilities/variables';
+
+.publication{
+    margin: 6px 0px 20px 0px;
+}
+
+.publication-info{
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-family: $principal-font;
+    color: #636363;
+}
+
+
+.publication-title, .publication-date, .publication-school{
+    font-family: $principal-font;
+}
+
+.publication-title{
+    font-size: 18px;
+    color: black;
+    margin: 0px;
+}
+
+.publication-date{
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.publication-school{
+    font-size: 16px;
+    color: $principal-color;
+    margin: 0px;
+}
+
+.publi-link{
+    color: black;
+}
+
+.publi-link:hover{
+    text-decoration: none;
+    color: $principal-color;
+}
+
+
+@media (max-width: 769px) {
+    .publication{
+        margin: 0px 0px 30px 20px;
+    }
+}

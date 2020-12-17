@@ -10,7 +10,7 @@ const BioPage = () => {
                 collaboration and teamwork and at the same time help new students improve their understanding of how development teams work.
             </p>
 
-            <p className="bio-interest"><strong>Interests</strong></p>
+            <p className="bio-interest">Interests</p>
             <ul className="interests">
                 <li>Chess</li>
                 <li>Computer science</li>

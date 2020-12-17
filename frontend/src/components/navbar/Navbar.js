@@ -29,6 +29,7 @@ const NavbarComponent = () => {
                     <Nav className="flex-column ml-auto">
                         <NavLink className="link-navbar text-navbar" to="/bio">Bio</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/education">Education</NavLink>
+                        <NavLink className="link-navbar text-navbar" to="/experience">Experience</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/projects">Projects</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/tecnologies">Tecnologies</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/publications">Publications</NavLink>
