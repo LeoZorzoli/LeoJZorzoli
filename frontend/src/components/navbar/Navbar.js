@@ -1,6 +1,8 @@
 import React from 'react'
 import './navbar.scss'
 
+import resume from '../../utilities/resume/resume.pdf'
+
 import { NavLink, Link } from 'react-router-dom'
 import { Nav, Navbar } from 'react-bootstrap'
 
@@ -30,7 +32,7 @@ const NavbarComponent = () => {
                         <NavLink className="link-navbar text-navbar" to="/projects">Projects</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/tecnologies">Tecnologies</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/publications">Publications</NavLink>
-                        <NavLink className="link-navbar text-navbar" to="/resume">Resume</NavLink>
+                        <a className="link-navbar text-navbar" href={resume} target="_blank" rel="noreferrer">Resume</a>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

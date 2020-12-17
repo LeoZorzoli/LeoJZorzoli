@@ -1,0 +1,20 @@
+@import '../../utilities/variables';
+
+.tecnology{
+    margin: 0px 20px 30px 0px;
+    text-align: center;
+}
+
+.tecnology-name{
+    font-size: 18px;
+    font-family: $principal-font;
+    color: $principal-color;
+    margin: 0px;
+}
+
+@media (max-width: 769px) {
+    .tecnology{
+        margin: 0px;
+        padding: 6px;
+    }
+}

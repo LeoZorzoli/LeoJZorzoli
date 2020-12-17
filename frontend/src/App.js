@@ -1,12 +1,11 @@
 import React from 'react'
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Blogs from './components/pages/Blogs'
 
 import HomePage from './pages/Home/HomePage'
 import BioPage from './pages/BioPage/BioPage'
 import EducationPage from './pages/EducationPage/EducationPage'
 import ProjectPage from './pages/ProjectsPage/ProjectsPage'
+import TecnologiesPage from './pages/TecnologiesPage/TecnologiesPage'
 
 import Navbar from './components/navbar/Navbar'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -24,8 +23,8 @@ function App() {
                     <Route exact path="/" component={HomePage} />
                     <Route path="/bio" component={BioPage} />
                     <Route path="/education" component={EducationPage} />
-                    <Route path="/blogs" component={Blogs} />
                     <Route path="/projects" component={ProjectPage} />
+                    <Route path="/tecnologies" component={TecnologiesPage} />
               </Switch>
             </Col>
           </Row>
