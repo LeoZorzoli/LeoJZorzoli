@@ -1,0 +1,30 @@
+@import '../../utilities/variables';
+
+.bio-info{
+    font-size: 22px;
+    font-family: $principal-font;
+    color: #636363;
+}
+
+.bio-interest{
+    font-size: 20px;
+    font-family: $principal-font;
+    color: black;
+}
+
+.interests{
+    font-size: 20px;
+    font-family: $principal-font;
+    color: $principal-color;
+    list-style: none; /* Remove default bullets */
+}
+
+.interests li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: black; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    font-size: 22px;
+    width: 20px; /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+}

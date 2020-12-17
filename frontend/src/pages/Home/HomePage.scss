@@ -12,8 +12,8 @@
     top: 0;
     left: 0;
     height: 100%;
-    padding: 80px;
-    margin-top: 40px;
+    padding: 40px 0px 0px 10px;
+    margin-top: 120px;
 }
 
 .initialInfo{
@@ -25,7 +25,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .descriptionInfo{
-    font-size: 24px;
+    font-size: 22px;
     font-family: $principal-font;
     text-align: left;
     color: #636363;
@@ -87,7 +87,8 @@
         top: 0;
         left: 0;
         height: 100%;
-        padding: 0px;
+        padding: 20px;
+        margin-top: 10px;
     }
 
   }
@@ -127,7 +128,7 @@
         top: 0;
         left: 0;
         height: 100%;
-        padding: 0px;
+        padding: 20px;
     }
 
   }

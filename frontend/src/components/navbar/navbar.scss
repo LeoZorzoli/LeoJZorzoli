@@ -17,7 +17,7 @@
 }
 
 .navbar-icon:hover{
-    color: #454545;
+    color: #696969;
 }
 
 .logo:hover{
@@ -41,6 +41,11 @@
     color: $principal-color
 }
 
+.text3:hover {
+    text-decoration: none;
+    color: #454545;
+}
+
 .flex-column{
     margin-top: 30px;
 }
@@ -56,7 +61,7 @@
 }
 
 .principalNavbar{
-    padding: 80px 40px 0px 0px;
+    padding: 120px 60px 0px 0px;
     margin-top: 40px;
     text-align: right;
 }
@@ -81,5 +86,9 @@
     .toggler{
         margin: auto;
         text-align: center !important;
+    }
+
+    .principalNavbar{
+        padding: 10px;
     }
 }

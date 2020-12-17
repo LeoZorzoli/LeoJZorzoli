@@ -1,0 +1,40 @@
+@import '../../utilities/variables';
+
+.education-info{
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-family: $principal-font;
+    color: #636363;
+}
+
+.education{
+    margin: 6px 0px 20px 0px;
+}
+
+.edu-title, .edu-date, .edu-school{
+    font-family: $principal-font;
+}
+
+.edu-title{
+    font-size: 18px;
+    color: black;
+    margin: 0px;
+}
+
+.edu-date{
+    font-size: 16px;
+    color: black;
+    margin: 0px;
+}
+
+.edu-school{
+    font-size: 16px;
+    color: $principal-color;
+    margin: 0px;
+}
+
+@media (max-width: 769px) {
+    .education{
+        margin: 0px 0px 30px 20px;
+    }
+}

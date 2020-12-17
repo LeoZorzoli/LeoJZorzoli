@@ -1,0 +1,34 @@
+@import '../../utilities/variables';
+
+.project{
+    font-family: $principal-font;
+}
+
+.project-title{
+    font-size: 18px;
+    color: $principal-color;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.project-title:hover{
+    color: $principal-color;
+}
+
+.project-description{
+    color: black;
+}
+
+.project-tecnologies{
+    color: #636363;
+}
+
+.project-link{
+    margin: 4px;
+    color: $principal-color;
+}
+
+.project-link:hover{
+    color: black;
+}
