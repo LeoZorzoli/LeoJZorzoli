@@ -6,7 +6,7 @@ import BioPage from './pages/BioPage/BioPage'
 import EducationPage from './pages/EducationPage/EducationPage'
 import ExperiencePage from './pages/ExperiencePage/ExperiencePage'
 import ProjectPage from './pages/ProjectsPage/ProjectsPage'
-import TecnologiesPage from './pages/TecnologiesPage/TecnologiesPage'
+import TechnologiesPage from './pages/TechnologiesPage/TechnologiesPage'
 import PublicationsPage from './pages/PublicationsPage/PublicationsPage'
 
 import Navbar from './components/navbar/Navbar'
@@ -27,7 +27,7 @@ function App() {
                     <Route path="/education" component={EducationPage} />
                     <Route path="/experience" component={ExperiencePage} />
                     <Route path="/projects" component={ProjectPage} />
-                    <Route path="/tecnologies" component={TecnologiesPage} />
+                    <Route path="/technologies" component={TechnologiesPage} />
                     <Route path="/publications" component={PublicationsPage} />
               </Switch>
             </Col>

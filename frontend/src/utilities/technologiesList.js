@@ -14,11 +14,11 @@ import html from './icons/html.png'
 import git from './icons/git.png'
 import photoshop from './icons/photoshop.png'
 
-const TecnologiesList = [
+const TechnologiesList = [
     {id: 1,name: "C", src: c}, {id: 5,name: "Python", src: python}, {id: 6,name: "Django",src: django}, {id: 9,name: "Javascript",src: js},
     {id: 2,name: "Node",src: node}, {id: 13,name: "React",src: react}, {id: 10,name: "Css",src: css}, {id: 14,name: "Bootstrap",src: bootstrap},
     {id: 3,name: "Sass",src: sass}, {id: 7,name: "MongoDB",src: mongo}, {id: 11,name: "MySQL",src: mysql}, {id: 15,name: "PostgreSQL",src: postgresql},
     {id: 4,name: "HTML",src: html}, {id: 8,name: "GIT", src: git}, {id: 12,name: "Photoshop", src: photoshop}
 ]
 
-export default TecnologiesList
+export default TechnologiesList

@@ -8,12 +8,7 @@ import { Nav, Navbar } from 'react-bootstrap'
 
 const NavbarComponent = () => {
 
-    const toggle = () => {
-        document.getElementById('navbar-toggler').classList.toggle("active");
-    }
-
     return (
-
         <div className="principalNavbar animate__animated animate__fadeIn">
             <div className="my-info">
                 <p className="text-navbar text1">home page of</p>
@@ -31,7 +26,7 @@ const NavbarComponent = () => {
                         <NavLink className="link-navbar text-navbar" to="/education">Education</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/experience">Experience</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/projects">Projects</NavLink>
-                        <NavLink className="link-navbar text-navbar" to="/tecnologies">Tecnologies</NavLink>
+                        <NavLink className="link-navbar text-navbar" to="/technologies">Technologies</NavLink>
                         <NavLink className="link-navbar text-navbar" to="/publications">Publications</NavLink>
                         <a className="link-navbar text-navbar" href={resume} target="_blank" rel="noreferrer">Resume</a>
                     </Nav>
