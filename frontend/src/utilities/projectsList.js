@@ -3,8 +3,7 @@ const projectsList = [
     {
         id: 1,
         name: 'FindT',
-        description: `FindT is a project that I am currently doing. It is a web application for students and programmers who 
-        want to connect with other people to collaborate and carry out different jobs.`,
+        description: `Current project in progress. It is a web application for students and programmers who want to connect with other people to collaborate and do different jobs.`,
         tecnologies: 'MERN Stack, Socket.io'
     },
     {
@@ -18,7 +17,7 @@ const projectsList = [
     {
         id: 3,
         name: 'E-commerce',
-        description: `A simple representation of an online store with some filters created with React-Redux state.`,
+        description: `Simple representation of an online store with its product filters and its shopping cart.`,
         tecnologies: 'React-Redux',
         github: 'https://github.com/LeoZorzoli/React-Redux-Ecommerce',
         demo: 'https://e-commerce-redux.web.app/',
@@ -26,7 +25,7 @@ const projectsList = [
     {
         id: 4,
         name: 'Restaurant',
-        description: `I create a representation of a restaurant page in order to put into practice my skills with the MERN stack.`,
+        description: `Representation of the website of a restaurant where customers can reserve their tables.`,
         tecnologies: 'MERN Stack',
         github: 'https://github.com/LeoZorzoli/Restaurant',
         demo: 'https://maxrestaurant.herokuapp.com/',
@@ -43,7 +42,7 @@ const projectsList = [
     {
         id: 6,
         name: 'Social Network',
-        description: `In this project I create a social network website to read other people's posts and share yours.`,
+        description: `Web application of a social network where users can read and share their posts.`,
         tecnologies: 'Javascript, Python/Django',
         github: 'https://github.com/LeoZorzoli/Network',
         demo: 'https://leo-network.herokuapp.com/',
