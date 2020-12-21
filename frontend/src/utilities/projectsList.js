@@ -33,8 +33,7 @@ const projectsList = [
     {
         id: 5,
         name: 'Books',
-        description: `A book review website where the users can search books,
-          leave reviews, and see the reviews made by other people.`,
+        description: `A book review website where the users can search for books and leave their reviews.`,
         tecnologies: 'Python/Flask, PostgreSQL',
         github: 'https://github.com/LeoZorzoli/Books',
         demo: 'https://leo-books.herokuapp.com/',
