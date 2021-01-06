@@ -63,7 +63,7 @@ const EducationList = [
     {
         id: 5,
         school: "Instituto Comercial Crespo",
-        title: "Bachellor in Economy",
+        title: "High School Degree with orientation in economics and administration",
         date: "2007 - 2012",
         img : graduated,
         learned: [
