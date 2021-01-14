@@ -1,7 +1,6 @@
 import React from 'react';
 import './PublicationsPage.scss';
 import publicationsList from '../../utilities/publicationsList';
-import { Row, Col } from 'react-bootstrap'
 
 const Publication = ({ publication }) => {
     return (
