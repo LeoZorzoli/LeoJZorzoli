@@ -1,15 +1,24 @@
-import { Routes, Route } from 'react-router'
-
-import HomePage from './pages/Home/HomePage'
-import BioPage from './pages/BioPage/BioPage'
-import EducationPage from './pages/EducationPage/EducationPage'
-import ExperiencePage from './pages/ExperiencePage/ExperiencePage'
-import ProjectPage from './pages/ProjectsPage/ProjectsPage'
-import TechnologiesPage from './pages/TechnologiesPage/TechnologiesPage'
-import PublicationsPage from './pages/PublicationsPage/PublicationsPage'
+import { Navigate, Route, Routes } from 'react-router'
 
 import Sidebar from './components/Sidebar'
 import Footer from './components/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Experience from './pages/Experience'
+import Education from './pages/Education'
+import Technologies from './pages/Technologies'
+import NotFound from './pages/NotFound'
+
+// URLs del sitio anterior. firebase.json también las redirige con 301.
+const redirects = {
+  '/bio': '/sobre-mi',
+  '/projects': '/proyectos',
+  '/experience': '/experiencia',
+  '/education': '/formacion',
+  '/technologies': '/tecnologias',
+  '/publications': '/',
+}
 
 function App() {
   return (
@@ -20,16 +29,16 @@ function App() {
         <div className="content">
           <main id="contenido">
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/sobre-mi" element={<BioPage />} />
-              <Route path="/proyectos" element={<ProjectPage />} />
-              <Route path="/cv" element={<ExperiencePage />} />
-              <Route path="/bio" element={<BioPage />} />
-              <Route path="/education" element={<EducationPage />} />
-              <Route path="/experience" element={<ExperiencePage />} />
-              <Route path="/projects" element={<ProjectPage />} />
-              <Route path="/technologies" element={<TechnologiesPage />} />
-              <Route path="/publications" element={<PublicationsPage />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/sobre-mi" element={<About />} />
+              <Route path="/proyectos" element={<Projects />} />
+              <Route path="/experiencia" element={<Experience />} />
+              <Route path="/formacion" element={<Education />} />
+              <Route path="/tecnologias" element={<Technologies />} />
+              {Object.entries(redirects).map(([from, to]) => (
+                <Route key={from} path={from} element={<Navigate to={to} replace />} />
+              ))}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

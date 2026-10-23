@@ -7,7 +7,9 @@ const links = [
   { to: '/', label: 'Inicio', end: true },
   { to: '/sobre-mi', label: 'Sobre mí' },
   { to: '/proyectos', label: 'Proyectos' },
-  { to: '/cv', label: 'CV' },
+  { to: '/experiencia', label: 'Experiencia' },
+  { to: '/formacion', label: 'Formación' },
+  { to: '/tecnologias', label: 'Tecnologías' },
 ]
 
 const Sidebar = () => {
@@ -26,8 +28,6 @@ const Sidebar = () => {
         <a href="https://github.com/LeoZorzoli" target="_blank" rel="noreferrer">github</a>
         <span className="sep"> · </span>
         <a href="https://www.linkedin.com/in/leonelzorzoli/" target="_blank" rel="noreferrer">linkedin</a>
-        <span className="sep"> · </span>
-        <a href="/cv.pdf" target="_blank" rel="noreferrer">cv.pdf</a>
       </p>
 
       <nav className="menu" aria-label="Principal">
@@ -37,6 +37,9 @@ const Sidebar = () => {
               <NavLink to={link.to} end={link.end}>{link.label}</NavLink>
             </li>
           ))}
+          <li>
+            <a href="/cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+          </li>
         </ul>
       </nav>
 

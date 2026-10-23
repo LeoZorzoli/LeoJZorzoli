@@ -6,6 +6,14 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      { "source": "/bio", "destination": "/sobre-mi", "type": 301 },
+      { "source": "/projects", "destination": "/proyectos", "type": 301 },
+      { "source": "/education", "destination": "/formacion", "type": 301 },
+      { "source": "/experience", "destination": "/experiencia", "type": 301 },
+      { "source": "/technologies", "destination": "/tecnologias", "type": 301 },
+      { "source": "/publications", "destination": "/", "type": 301 }
+    ],
     "rewrites": [
       {
         "source": "**",
