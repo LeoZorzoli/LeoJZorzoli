@@ -1,6 +1,6 @@
 // Tecnologías agrupadas. `id` es fijo (se usa en el HTML); `group` va en `{ es, en }`.
 // `icon` es una máscara (PNG o SVG) de src/assets/tech: el color lo pone el CSS.
-// Los SVG de marcas vienen de Simple Icons (CC0); aws, chatgpt, codex, fury, java, nosql y datamesh son dibujos propios.
+// Los SVG de marcas vienen de Simple Icons (CC0); aws, chatgpt, codex, fury, java y nosql son dibujos propios.
 import angular from '../assets/tech/angular.png'
 import astro from '../assets/tech/astro.svg'
 import aws from '../assets/tech/aws.svg'
@@ -13,7 +13,6 @@ import csharp from '../assets/tech/csharp.png'
 import css from '../assets/tech/css.png'
 import cursor from '../assets/tech/cursor.svg'
 import datadog from '../assets/tech/datadog.svg'
-import datamesh from '../assets/tech/datamesh.svg'
 import django from '../assets/tech/django.png'
 import docker from '../assets/tech/docker.svg'
 import dotnet from '../assets/tech/dotnet.svg'
@@ -91,7 +90,6 @@ const technologies = [
       { name: 'MongoDB', icon: mongodb },
       { name: 'NoSQL', icon: nosql },
       { name: 'Supabase', icon: supabase },
-      { name: 'Data Mesh', icon: datamesh },
     ],
   },
   {

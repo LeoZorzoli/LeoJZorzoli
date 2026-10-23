@@ -91,6 +91,8 @@ a:hover {
   flex-wrap: wrap;
   gap: 64px;
   max-width: 1080px;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
   padding: 96px 24px 48px;
 }
@@ -579,12 +581,14 @@ a.entry-icon:hover {
 
 @media (max-width: 920px) {
   .layout {
+    flex-direction: column;
+    flex-wrap: nowrap;
     gap: 40px;
     padding: 48px 16px 32px;
   }
 
   .sidebar {
-    flex: 1 1 100%;
+    flex: none;
     text-align: left;
   }
 
@@ -613,7 +617,7 @@ a.entry-icon:hover {
   }
 
   .content {
-    flex-basis: 100%;
+    flex: 1 0 auto;
   }
 
   .headline,

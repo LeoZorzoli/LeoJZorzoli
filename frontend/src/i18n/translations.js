@@ -61,7 +61,7 @@ const translations = {
     'tagline': 'Software Developer · Argentina',
     'nav.label': 'Main',
     'nav.home': 'Home',
-    'nav.about': 'About',
+    'nav.about': 'About me',
     'nav.projects': 'Projects',
     'nav.experience': 'Experience',
     'nav.education': 'Education',
