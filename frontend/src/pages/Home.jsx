@@ -21,15 +21,20 @@ const formatMonth = value => {
 
 const Home = () => (
   <>
-    <title>Leonel Zorzoli · desarrollador web</title>
+    <title>Leonel J Zorzoli · Desarrollador de Software</title>
 
     <h1 className="headline">
       Hago productos web que resuelven problemas reales, en la intersección entre{' '}
       <span className="accent">diseño</span>, producto y código.
     </h1>
     <p className="lead">
-      Empecé con CS50 en 2020 y desde entonces construyo aplicaciones de punta a punta.
-      [COMPLETAR: rol y stack actual]
+      Llevo cinco años construyendo software en producción: en Mercado Libre, sistemas backend para
+      planificar y rutear envíos a escala en varios países de Latinoamérica y automatizaciones que
+      redujeron el trabajo manual de los equipos, y en Crédito Argentino,
+      creando aplicaciones de gestión y automatizaciones para las áreas comercial y de administración.
+      Hoy llevo esa experiencia a proyectos propios y los desarrollo usando IA en cada etapa, de la
+      idea al producto publicado: <strong>Rumbo</strong>, un juego diario para adivinar localidades
+      argentinas, y <strong>LoteosAPP</strong>, un sistema de gestión de loteos para inmobiliarias.
     </p>
 
     <section className="now" aria-labelledby="now-title">

@@ -6,7 +6,7 @@ import Timeline, { TimelineRow } from '../components/Timeline'
 import { courses, studies } from '../data/education'
 
 const EducationRow = ({ entry, icon }) => (
-  <TimelineRow date={entry.date}>
+  <TimelineRow date={entry.date} end={entry.end}>
     <div className="entry-with-icon">
       {entry.certificate ? (
         <a
@@ -25,10 +25,7 @@ const EducationRow = ({ entry, icon }) => (
       <div>
         <Entry entry={entry}>
           {entry.certificate && (
-            <>
-              {' · '}
-              <a href={entry.certificate} target="_blank" rel="noreferrer">certificado ↗</a>
-            </>
+            <a href={entry.certificate} target="_blank" rel="noreferrer">certificado ↗</a>
           )}
         </Entry>
       </div>
@@ -38,7 +35,7 @@ const EducationRow = ({ entry, icon }) => (
 
 const Education = () => (
   <>
-    <title>Formación · Leonel Zorzoli</title>
+    <title>Formación · Leonel J Zorzoli</title>
 
     <h1 className="page-title">Formación</h1>
 

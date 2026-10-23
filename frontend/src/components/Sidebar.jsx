@@ -18,9 +18,9 @@ const Sidebar = () => {
 
   return (
     <aside className="sidebar">
-      <p className="whoami">~/leonel <span className="prompt">$</span> whoami</p>
-      <p className="name"><Link to="/">Leonel Zorzoli</Link></p>
-      <p className="tagline">desarrollador web · Argentina</p>
+      <p className="whoami">~/whoami <span className="prompt">$</span></p>
+      <p className="name"><Link to="/">Leonel J Zorzoli</Link></p>
+      <p className="tagline">Desarrollador de Software · Argentina</p>
 
       <p className="contact">
         <a href="mailto:zorzolileonel@gmail.com">zorzolileonel@gmail.com</a>

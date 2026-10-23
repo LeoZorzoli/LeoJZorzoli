@@ -4,21 +4,22 @@
 
 const projects = [
   {
-    name: 'LoteosAPP',
+    name: 'Rumbo',
     year: '2026',
-    stack: '[COMPLETAR: stack]',
-    description: '[COMPLETAR: qué es y qué problema resuelve]',
+    stack: 'Go, Astro, React, TypeScript, Cloudflare Pages',
+    description: 'Juego web diario para adivinar localidades argentinas por su plano: cuatro intentos por mapa con distancia, dirección y pistas, y una postal de cada lugar.',
     links: [
-      // { label: 'sitio', href: '[COMPLETAR]' },
+      { label: 'jugar', href: 'https://jugarumbo.pages.dev/' },
     ],
   },
   {
-    name: 'FindT',
-    year: '2021',
-    status: 'archived',
-    stack: 'MongoDB, Express, React, Node, Socket.io',
-    description: 'Plataforma para que estudiantes y programadores se conecten para colaborar en proyectos y aprendan cómo trabaja un equipo de desarrollo.',
-    links: [],
+    name: 'LoteosAPP',
+    year: '2026',
+    stack: 'Go, React, TypeScript, Tailwind CSS, PostgreSQL, Supabase, Docker',
+    description: 'Sistema de gestión de loteos para inmobiliarias: importa los planos en DXF y administra lotes, reservas, ventas en cuotas y cobranzas.',
+    links: [
+      { label: 'repositorio', href: 'https://github.com/LoteoApp/LoteosAPP' },
+    ],
   },
   {
     name: 'E-commerce',

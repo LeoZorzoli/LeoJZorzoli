@@ -9,9 +9,24 @@ const timeline = [
     text: 'Nuevo portfolio: diseño propio, bilingüe y con modo oscuro.',
   },
   {
-    date: '2026',
+    date: '2026·10',
+    type: 'launch',
+    text: 'Lancé **Rumbo**, un juego web diario para adivinar localidades argentinas por su plano.',
+  },
+  {
+    date: '2026·08',
     type: 'project',
-    text: '**LoteosAPP** — [COMPLETAR hito].',
+    text: 'Empecé **LoteosAPP**, un sistema de gestión de loteos para inmobiliarias.',
+  },
+  {
+    date: '2026·03',
+    type: 'work',
+    text: 'Software Developer en Mercado Libre, equipo de Routing PrePost.',
+  },
+  {
+    date: '2024·09',
+    type: 'work',
+    text: 'Software Developer en **Mercado Libre**, equipo de Fleet Planning.',
   },
   {
     date: '2023·04',
@@ -21,7 +36,7 @@ const timeline = [
   {
     date: '2021·07',
     type: 'work',
-    text: 'Software Developer en Crédito Argentino.',
+    text: 'Analista Desarrollador de Software en Crédito Argentino.',
   },
   {
     date: '2020·11',

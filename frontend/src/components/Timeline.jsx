@@ -1,9 +1,13 @@
-// Grilla de fecha + texto que comparten Inicio (Trayectoria) y CV.
+// Grilla de fecha + texto que comparten Inicio (Trayectoria), Experiencia y Formación.
 const Timeline = ({ children }) => <ol className="timeline">{children}</ol>
 
-export const TimelineRow = ({ date, label, children }) => (
+// `end` convierte la fecha en un rango: inicio arriba, fin debajo.
+export const TimelineRow = ({ date, end, label, children }) => (
   <li className="timeline-row">
-    <span className="timeline-date">{date}</span>
+    <span className="timeline-date">
+      {date}
+      {end && <span className="timeline-end">— {end}</span>}
+    </span>
     <div className="timeline-body">
       {label && <span className="timeline-label">{label}</span>}
       {children}

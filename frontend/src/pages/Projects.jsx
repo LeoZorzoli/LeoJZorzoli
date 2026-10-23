@@ -2,7 +2,7 @@ import projects from '../data/projects'
 
 const Projects = () => (
   <>
-    <title>Proyectos · Leonel Zorzoli</title>
+    <title>Proyectos · Leonel J Zorzoli</title>
 
     <h1 className="page-title">Proyectos</h1>
     <ul className="projects">

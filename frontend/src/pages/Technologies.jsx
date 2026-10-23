@@ -3,7 +3,7 @@ import technologies from '../data/technologies'
 
 const Technologies = () => (
   <>
-    <title>Tecnologías · Leonel Zorzoli</title>
+    <title>Tecnologías · Leonel J Zorzoli</title>
 
     <h1 className="page-title">Tecnologías</h1>
     {technologies.map(({ group, items }) => (

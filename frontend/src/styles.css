@@ -345,6 +345,10 @@ main p {
   color: var(--muted);
 }
 
+.timeline-end {
+  display: block;
+}
+
 .timeline-label {
   display: block;
   font-family: var(--mono);
@@ -370,6 +374,35 @@ main p {
 .entry-description {
   margin-top: 4px;
   font-size: 17px;
+}
+
+.entry-highlights {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 17px;
+}
+
+.entry-highlights li + li {
+  margin-top: 6px;
+}
+
+.entry-highlights li::marker {
+  color: var(--accent);
+}
+
+.entry-roles {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry-role {
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+.entry-role + .entry-role {
+  margin-top: 18px;
 }
 
 /* Sobre mí */

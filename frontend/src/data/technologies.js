@@ -1,6 +1,7 @@
 // Tecnologías agrupadas. `icon` es una máscara (PNG o SVG) de src/assets/tech: el color lo pone el CSS.
-// Los SVG de marcas vienen de Simple Icons (CC0); aws, chatgpt, codex, java, nosql y datamesh son dibujos propios.
+// Los SVG de marcas vienen de Simple Icons (CC0); aws, chatgpt, codex, fury, java, nosql y datamesh son dibujos propios.
 import angular from '../assets/tech/angular.png'
+import astro from '../assets/tech/astro.svg'
 import aws from '../assets/tech/aws.svg'
 import bootstrap from '../assets/tech/bootstrap.png'
 import chatgpt from '../assets/tech/chatgpt.svg'
@@ -18,16 +19,20 @@ import dotnet from '../assets/tech/dotnet.svg'
 import express from '../assets/tech/express.svg'
 import figma from '../assets/tech/figma.svg'
 import flask from '../assets/tech/flask.svg'
+import fury from '../assets/tech/fury.svg'
 import git from '../assets/tech/git.png'
 import githubactions from '../assets/tech/githubactions.svg'
+import githubcopilot from '../assets/tech/githubcopilot.svg'
 import go from '../assets/tech/go.svg'
 import grafana from '../assets/tech/grafana.svg'
 import html from '../assets/tech/html.png'
 import java from '../assets/tech/java.svg'
+import jenkins from '../assets/tech/jenkins.svg'
 import js from '../assets/tech/js.png'
 import mongodb from '../assets/tech/mongodb.svg'
 import mysql from '../assets/tech/mysql.png'
 import node from '../assets/tech/node.png'
+import newrelic from '../assets/tech/newrelic.svg'
 import nosql from '../assets/tech/nosql.svg'
 import photoshop from '../assets/tech/photoshop.png'
 import postgresql from '../assets/tech/postgresql.svg'
@@ -50,6 +55,7 @@ const technologies = [
       { name: 'React', icon: react },
       { name: 'Angular', icon: angular },
       { name: 'Redux', icon: redux },
+      { name: 'Astro', icon: astro },
       { name: 'Vite', icon: vite },
       { name: 'Tailwind CSS', icon: tailwind },
       { name: 'HTML', icon: html },
@@ -85,14 +91,17 @@ const technologies = [
     ],
   },
   {
-    group: 'Nube y observabilidad',
+    group: 'Nube, despliegue y monitoreo',
     items: [
       { name: 'AWS', icon: aws },
       { name: 'Cloudflare', icon: cloudflare },
       { name: 'Docker', icon: docker },
       { name: 'GitHub Actions', icon: githubactions },
+      { name: 'Jenkins', icon: jenkins },
+      { name: 'Fury', icon: fury },
       { name: 'Grafana', icon: grafana },
       { name: 'Datadog', icon: datadog },
+      { name: 'New Relic', icon: newrelic },
     ],
   },
   {
@@ -102,6 +111,7 @@ const technologies = [
       { name: 'Codex', icon: codex },
       { name: 'ChatGPT', icon: chatgpt },
       { name: 'Cursor', icon: cursor },
+      { name: 'GitHub Copilot', icon: githubcopilot },
     ],
   },
   {
