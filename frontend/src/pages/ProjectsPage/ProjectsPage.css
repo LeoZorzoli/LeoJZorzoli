@@ -1,33 +1,33 @@
 
 .project{
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--serif);
 }
 
 .project-title{
     font-size: 18px;
-    color: #A22B2B;
+    color: var(--accent);
     margin: 0px;
     border: none;
     background-color: transparent;
 }
 
 .project-title:hover{
-    color: #A22B2B;
+    color: var(--accent);
 }
 
 .project-description{
-    color: black;
+    color: var(--ink);
 }
 
 .project-tecnologies{
-    color: #636363;
+    color: var(--muted);
 }
 
 .project-link{
     margin: 4px;
-    color: #A22B2B;
+    color: var(--accent);
 }
 
 .project-link:hover{
-    color: black;
+    color: var(--ink);
 }

@@ -1,7 +1,7 @@
 
 
 .readMoreButton:hover{
-    background-color: #A22B2B;
+    background-color: var(--accent);
     color: white;
     text-decoration: none;
 }
@@ -15,22 +15,22 @@
 }
 
 .initialInfo{
-    font-family: 'Roboto Slab', serif;
-    color: #A22B2B;
+    font-family: var(--serif);
+    color: var(--accent);
     font-size: 32px;
     text-align: left;
 }
 
 .descriptionInfo{
     font-size: 22px;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--serif);
     text-align: left;
-    color: #636363;
+    color: var(--muted);
 }
 
 
 .icon{
-    color: #A22B2B;
+    color: var(--accent);
     margin: 70px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -76,7 +76,7 @@
 
     .descriptionInfo{
         font-size: 20px;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: var(--serif);
         text-align: left;
     }
 
@@ -92,5 +92,5 @@
 
 
 .webDeveloper{
-    color: #A22B2B;
+    color: var(--accent);
 }

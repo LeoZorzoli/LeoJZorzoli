@@ -2,8 +2,8 @@
 .education-info{
     margin-bottom: 40px;
     font-size: 22px;
-    font-family: 'Roboto Slab', serif;
-    color: #636363;
+    font-family: var(--serif);
+    color: var(--muted);
 }
 
 .education{
@@ -11,24 +11,24 @@
 }
 
 .edu-title, .edu-date, .edu-school{
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--serif);
 }
 
 .edu-title{
     font-size: 18px;
-    color: black;
+    color: var(--ink);
     margin: 0px;
 }
 
 .edu-date{
     font-size: 16px;
-    color: black;
+    color: var(--ink);
     margin: 0px;
 }
 
 .edu-school{
     font-size: 16px;
-    color: #A22B2B;
+    color: var(--accent);
     margin: 0px;
 }
 

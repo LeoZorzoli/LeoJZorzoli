@@ -6,8 +6,8 @@
 
 .technology-name{
     font-size: 18px;
-    font-family: 'Roboto Slab', serif;
-    color: #A22B2B;
+    font-family: var(--serif);
+    color: var(--accent);
     margin: 0px;
 }
 
