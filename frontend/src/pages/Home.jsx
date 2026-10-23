@@ -4,62 +4,54 @@ import Rich from '../components/Rich'
 import Timeline, { TimelineRow } from '../components/Timeline'
 import now from '../data/now'
 import timeline from '../data/timeline'
+import { useI18n } from '../i18n/LanguageContext'
 
-const typeLabels = {
-  launch: 'Lanzamiento',
-  project: 'Proyecto',
-  work: 'Trabajo',
-  education: 'Formación',
-}
-
-const formatMonth = value => {
+const formatMonth = (value, locale) => {
   const [year, month] = value.split('-').map(Number)
-  return new Intl.DateTimeFormat('es-AR', { month: 'long', year: 'numeric' })
+  return new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' })
     .format(new Date(year, month - 1))
     .replace(' de ', ' ')
 }
 
-const Home = () => (
-  <>
-    <title>Leonel J Zorzoli · Desarrollador de Software</title>
+const Home = () => {
+  const { t, tx, locale } = useI18n()
 
-    <h1 className="headline">
-      Hago productos web que resuelven problemas reales, en la intersección entre{' '}
-      <span className="accent">diseño</span>, producto y código.
-    </h1>
-    <p className="lead">
-      Llevo cinco años construyendo software en producción: en Mercado Libre, sistemas backend para
-      planificar y rutear envíos a escala en varios países de Latinoamérica y automatizaciones que
-      redujeron el trabajo manual de los equipos, y en Crédito Argentino,
-      creando aplicaciones de gestión y automatizaciones para las áreas comercial y de administración.
-      Hoy llevo esa experiencia a proyectos propios y los desarrollo usando IA en cada etapa, de la
-      idea al producto publicado: <strong>Rumbo</strong>, un juego diario para adivinar localidades
-      argentinas, y <strong>LoteosAPP</strong>, un sistema de gestión de loteos para inmobiliarias.
-    </p>
+  return (
+    <>
+      <title>{`Leonel J Zorzoli · ${t('home.title')}`}</title>
 
-    <section className="now" aria-labelledby="now-title">
-      <h2 id="now-title" className="section-title">Ahora · {formatMonth(now.updated)}</h2>
-      <ul>
-        {now.items.map(item => (
-          <li key={item}><Rich text={item} /></li>
-        ))}
-      </ul>
-    </section>
+      <h1 className="headline">
+        {t('home.headline.before')}{' '}
+        <span className="accent">{t('home.headline.accent')}</span>{t('home.headline.after')}
+      </h1>
+      <p className="lead"><Rich text={t('home.lead')} /></p>
 
-    <section className="section" aria-labelledby="timeline-title">
-      <div className="section-header">
-        <h2 id="timeline-title" className="section-title">Trayectoria</h2>
-        <Link className="section-more" to="/experiencia">ver todo →</Link>
-      </div>
-      <Timeline>
-        {timeline.map(entry => (
-          <TimelineRow key={entry.date + entry.text} date={entry.date} label={typeLabels[entry.type]}>
-            <p><Rich text={entry.text} /></p>
-          </TimelineRow>
-        ))}
-      </Timeline>
-    </section>
-  </>
-)
+      <section className="now" aria-labelledby="now-title">
+        <h2 id="now-title" className="section-title">
+          {t('home.now')} · {formatMonth(now.updated, locale)}
+        </h2>
+        <ul>
+          {now.items.map((item, i) => (
+            <li key={i}><Rich text={tx(item)} /></li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section" aria-labelledby="timeline-title">
+        <div className="section-header">
+          <h2 id="timeline-title" className="section-title">{t('home.timeline')}</h2>
+          <Link className="section-more" to="/experiencia">{t('home.more')}</Link>
+        </div>
+        <Timeline>
+          {timeline.map((entry, i) => (
+            <TimelineRow key={i} date={entry.date} label={t(`type.${entry.type}`)}>
+              <p><Rich text={tx(entry.text)} /></p>
+            </TimelineRow>
+          ))}
+        </Timeline>
+      </section>
+    </>
+  )
+}
 
 export default Home

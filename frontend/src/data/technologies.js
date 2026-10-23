@@ -1,4 +1,5 @@
-// Tecnologías agrupadas. `icon` es una máscara (PNG o SVG) de src/assets/tech: el color lo pone el CSS.
+// Tecnologías agrupadas. `id` es fijo (se usa en el HTML); `group` va en `{ es, en }`.
+// `icon` es una máscara (PNG o SVG) de src/assets/tech: el color lo pone el CSS.
 // Los SVG de marcas vienen de Simple Icons (CC0); aws, chatgpt, codex, fury, java, nosql y datamesh son dibujos propios.
 import angular from '../assets/tech/angular.png'
 import astro from '../assets/tech/astro.svg'
@@ -48,6 +49,7 @@ import vite from '../assets/tech/vite.svg'
 
 const technologies = [
   {
+    id: 'frontend',
     group: 'Frontend',
     items: [
       { name: 'JavaScript', icon: js },
@@ -65,6 +67,7 @@ const technologies = [
     ],
   },
   {
+    id: 'backend',
     group: 'Backend',
     items: [
       { name: 'C#', icon: csharp },
@@ -80,7 +83,8 @@ const technologies = [
     ],
   },
   {
-    group: 'Datos',
+    id: 'data',
+    group: { es: 'Datos', en: 'Data' },
     items: [
       { name: 'MySQL', icon: mysql },
       { name: 'PostgreSQL', icon: postgresql },
@@ -91,7 +95,8 @@ const technologies = [
     ],
   },
   {
-    group: 'Nube, despliegue y monitoreo',
+    id: 'cloud',
+    group: { es: 'Nube, despliegue y monitoreo', en: 'Cloud, deployment and monitoring' },
     items: [
       { name: 'AWS', icon: aws },
       { name: 'Cloudflare', icon: cloudflare },
@@ -105,7 +110,8 @@ const technologies = [
     ],
   },
   {
-    group: 'IA',
+    id: 'ai',
+    group: { es: 'IA', en: 'AI' },
     items: [
       { name: 'Claude Code', icon: claude },
       { name: 'Codex', icon: codex },
@@ -115,7 +121,8 @@ const technologies = [
     ],
   },
   {
-    group: 'Herramientas',
+    id: 'tools',
+    group: { es: 'Herramientas', en: 'Tools' },
     items: [
       { name: 'Git', icon: git },
       { name: 'Figma', icon: figma },

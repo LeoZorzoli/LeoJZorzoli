@@ -4,55 +4,64 @@ import Entry from '../components/Entry'
 import MaskIcon from '../components/MaskIcon'
 import Timeline, { TimelineRow } from '../components/Timeline'
 import { courses, studies } from '../data/education'
+import { useI18n } from '../i18n/LanguageContext'
 
-const EducationRow = ({ entry, icon }) => (
-  <TimelineRow date={entry.date} end={entry.end}>
-    <div className="entry-with-icon">
-      {entry.certificate ? (
-        <a
-          className="entry-icon"
-          href={entry.certificate}
-          target="_blank"
-          rel="noreferrer"
-          tabIndex={-1}
-          aria-hidden="true"
-        >
-          <MaskIcon src={icon} />
-        </a>
-      ) : (
-        <span className="entry-icon"><MaskIcon src={icon} /></span>
-      )}
-      <div>
-        <Entry entry={entry}>
-          {entry.certificate && (
-            <a href={entry.certificate} target="_blank" rel="noreferrer">certificado ↗</a>
-          )}
-        </Entry>
+const EducationRow = ({ entry, icon }) => {
+  const { t } = useI18n()
+
+  return (
+    <TimelineRow date={entry.date} end={entry.end}>
+      <div className="entry-with-icon">
+        {entry.certificate ? (
+          <a
+            className="entry-icon"
+            href={entry.certificate}
+            target="_blank"
+            rel="noreferrer"
+            tabIndex={-1}
+            aria-hidden="true"
+          >
+            <MaskIcon src={icon} />
+          </a>
+        ) : (
+          <span className="entry-icon"><MaskIcon src={icon} /></span>
+        )}
+        <div>
+          <Entry entry={entry}>
+            {entry.certificate && (
+              <a href={entry.certificate} target="_blank" rel="noreferrer">{t('education.certificate')}</a>
+            )}
+          </Entry>
+        </div>
       </div>
-    </div>
-  </TimelineRow>
-)
+    </TimelineRow>
+  )
+}
 
-const Education = () => (
-  <>
-    <title>Formación · Leonel J Zorzoli</title>
+const Education = () => {
+  const { t } = useI18n()
 
-    <h1 className="page-title">Formación</h1>
+  return (
+    <>
+      <title>{`${t('nav.education')} · Leonel J Zorzoli`}</title>
 
-    <section aria-labelledby="studies-title">
-      <h2 id="studies-title" className="section-title">Estudios</h2>
-      <Timeline>
-        {studies.map(entry => <EducationRow key={entry.title} entry={entry} icon={graduated} />)}
-      </Timeline>
-    </section>
+      <h1 className="page-title">{t('nav.education')}</h1>
 
-    <section className="section" aria-labelledby="courses-title">
-      <h2 id="courses-title" className="section-title">Cursos y certificaciones</h2>
-      <Timeline>
-        {courses.map(entry => <EducationRow key={entry.title} entry={entry} icon={diploma} />)}
-      </Timeline>
-    </section>
-  </>
-)
+      <section aria-labelledby="studies-title">
+        <h2 id="studies-title" className="section-title">{t('education.studies')}</h2>
+        <Timeline>
+          {studies.map((entry, i) => <EducationRow key={i} entry={entry} icon={graduated} />)}
+        </Timeline>
+      </section>
+
+      <section className="section" aria-labelledby="courses-title">
+        <h2 id="courses-title" className="section-title">{t('education.courses')}</h2>
+        <Timeline>
+          {courses.map((entry, i) => <EducationRow key={i} entry={entry} icon={diploma} />)}
+        </Timeline>
+      </section>
+    </>
+  )
+}
 
 export default Education

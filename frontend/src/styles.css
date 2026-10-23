@@ -208,6 +208,11 @@ a:hover {
   cursor: pointer;
 }
 
+.lang-switch {
+  display: flex;
+  gap: 4px;
+}
+
 .control:hover {
   border-color: var(--accent);
   color: var(--accent);

@@ -1,14 +1,20 @@
 import { Link } from 'react-router'
 
-const NotFound = () => (
-  <>
-    <title>Página no encontrada · Leonel J Zorzoli</title>
+import { useI18n } from '../i18n/LanguageContext'
 
-    <h1 className="page-title">Página no encontrada</h1>
-    <p className="lead">
-      Esta dirección no existe. <Link to="/">Volver al inicio</Link>.
-    </p>
-  </>
-)
+const NotFound = () => {
+  const { t } = useI18n()
+
+  return (
+    <>
+      <title>{`${t('notFound.title')} · Leonel J Zorzoli`}</title>
+
+      <h1 className="page-title">{t('notFound.title')}</h1>
+      <p className="lead">
+        {t('notFound.text')} <Link to="/">{t('notFound.back')}</Link>.
+      </p>
+    </>
+  )
+}
 
 export default NotFound

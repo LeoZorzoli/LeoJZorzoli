@@ -9,6 +9,7 @@ import Experience from './pages/Experience'
 import Education from './pages/Education'
 import Technologies from './pages/Technologies'
 import NotFound from './pages/NotFound'
+import { useI18n } from './i18n/LanguageContext'
 
 // URLs del sitio anterior. firebase.json también las redirige con 301.
 const redirects = {
@@ -21,9 +22,11 @@ const redirects = {
 }
 
 function App() {
+  const { t } = useI18n()
+
   return (
     <>
-      <a className="skip-link" href="#contenido">Saltar al contenido</a>
+      <a className="skip-link" href="#contenido">{t('skip')}</a>
       <div className="layout">
         <Sidebar />
         <div className="content">

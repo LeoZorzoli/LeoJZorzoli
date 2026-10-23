@@ -32,10 +32,15 @@
     <meta name="theme-color" content="#F4F5F7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#121519" media="(prefers-color-scheme: dark)" />
     <script>
-      // Aplica el tema antes de pintar para evitar el parpadeo.
+      // Aplica el tema y el idioma guardados antes de pintar, para evitar el parpadeo.
       (function () {
         var theme = null
-        try { theme = localStorage.getItem("theme") } catch (e) {}
+        var lang = null
+        try {
+          theme = localStorage.getItem("theme")
+          lang = localStorage.getItem("lang")
+        } catch (e) {}
+        if (lang === "es" || lang === "en") document.documentElement.lang = lang
         if (theme !== "light" && theme !== "dark") {
           theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
         }

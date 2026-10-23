@@ -1,5 +1,7 @@
 // Formación, de la más nueva a la más vieja.
 // `date` (y `end` si es un rango, o 'hoy') van en la columna de la izquierda.
+// Los textos traducibles van en `{ es, en }`; si falta `en`, se muestra el español. Los nombres de
+// cursos dictados en español quedan igual en los dos idiomas.
 // `certificate` es el link a la credencial (o un archivo dentro de /public); si está, el ícono de diploma linkea a él.
 
 // Estudios formales.
@@ -7,13 +9,13 @@ export const studies = [
   {
     date: '2023·04',
     end: 'hoy',
-    title: 'Tecnicatura en Informática aplicada al Diseño Multimedial y de Sitios Web',
+    title: { es: 'Tecnicatura en Informática aplicada al Diseño Multimedial y de Sitios Web', en: 'Technical degree in Computing applied to Multimedia and Web Design' },
     org: 'Universidad Nacional del Litoral',
   },
   {
     date: '2007',
     end: '2012',
-    title: 'Secundario con orientación en Economía y Administración',
+    title: { es: 'Secundario con orientación en Economía y Administración', en: 'High school, specializing in Economics and Administration' },
     org: 'Instituto Comercial Crespo',
   },
 ]
@@ -66,35 +68,35 @@ export const courses = [
     date: '2020·11',
     end: '2021·02',
     title: 'Full Stack Open',
-    org: 'Universidad de Helsinki',
-    description: 'React, Redux, Node.js, Express, MongoDB y GraphQL.',
+    org: { es: 'Universidad de Helsinki', en: 'University of Helsinki' },
+    description: { es: 'React, Redux, Node.js, Express, MongoDB y GraphQL.', en: 'React, Redux, Node.js, Express, MongoDB and GraphQL.' },
     certificate: 'https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/fa5ea631a2fb39fab3f20f36720bc72a',
   },
   {
     date: '2020·11',
     title: 'Google IT Support Professional Certificate',
     org: 'Google',
-    description: 'Redes, computación en la nube, Windows y Linux, administración de sistemas y resolución de problemas.',
+    description: { es: 'Redes, computación en la nube, Windows y Linux, administración de sistemas y resolución de problemas.', en: 'Networking, cloud computing, Windows and Linux, systems administration and troubleshooting.' },
     certificate: 'https://www.coursera.org/account/accomplishments/specialization/certificate/T5SLHLEUKD7T',
   },
   {
     date: '2020·07',
-    title: 'CS50W: programación web con Python y JavaScript',
+    title: { es: 'CS50W: programación web con Python y JavaScript', en: 'CS50W: Web Programming with Python and JavaScript' },
     org: 'HarvardX',
-    description: 'Python, Flask, Django, JavaScript, Git, diseño de bases de datos y APIs, escalabilidad y seguridad.',
+    description: { es: 'Python, Flask, Django, JavaScript, Git, diseño de bases de datos y APIs, escalabilidad y seguridad.', en: 'Python, Flask, Django, JavaScript, Git, database and API design, scalability and security.' },
     certificate: 'https://certificates.cs50.io/437ca50e-b43f-4c70-8af5-893e7bf85bf1',
   },
   {
     date: '2020',
-    title: 'CS50AI: Introducción a la inteligencia artificial con Python',
+    title: { es: 'CS50AI: Introducción a la inteligencia artificial con Python', en: 'CS50AI: Introduction to Artificial Intelligence with Python' },
     org: 'HarvardX',
   },
   {
     date: '2020·04',
     end: '2020·06',
-    title: 'CS50x: Introducción a las ciencias de la computación',
+    title: { es: 'CS50x: Introducción a las ciencias de la computación', en: 'CS50x: Introduction to Computer Science' },
     org: 'HarvardX',
-    description: 'Algoritmos, estructuras de datos, C, Python y SQL.',
+    description: { es: 'Algoritmos, estructuras de datos, C, Python y SQL.', en: 'Algorithms, data structures, C, Python and SQL.' },
     certificate: '/diplomas/cs50x.pdf',
   },
 ]
