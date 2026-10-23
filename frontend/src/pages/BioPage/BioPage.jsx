@@ -1,9 +1,8 @@
-import React from 'react';
-import './BioPage.scss'
+import './BioPage.css'
 
 const BioPage = () => {
     return ( 
-        <div className="animate__animated animate__fadeIn">
+        <div>
             <p className="bio-info">
                 Leonel Zorzoli is a computer science student and Jr. Web Developer. A creative, enterprising and productive 
                 person who never stops learning. He is currently working on a project called FindT which seeks to improve 

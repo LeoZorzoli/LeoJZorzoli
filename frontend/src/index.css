@@ -1,0 +1,66 @@
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::selection {
+  background: #f0e6e7; 
+}
+
+::-moz-selection {
+background: #f0e6e7; 
+}
+
+
+
+a {
+  color: inherit;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.layout > .principalNavbar {
+  flex: 0 0 40%;
+}
+
+.layout > .principal {
+  flex: 1 1 400px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-row {
+  display: flex;
+  gap: 16px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project summary {
+  cursor: pointer;
+  padding: 12px 0;
+}

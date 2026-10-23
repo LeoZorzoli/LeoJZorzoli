@@ -1,16 +1,15 @@
-@import '../../utilities/variables';
 
 .experience-info{
     margin-bottom: 40px;
     font-size: 22px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     color: #636363;
 }
 
 .experience{
     font-size: 18px;
-    font-family: $principal-font;
-    color: $principal-color;
+    font-family: 'Roboto Slab', serif;
+    color: #A22B2B;
     list-style: none; /* Remove default bullets */
 }
 
@@ -25,7 +24,7 @@
 }
 
 .experience-title{
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     font-size: 18px;
     color: black;
     margin: 0px;

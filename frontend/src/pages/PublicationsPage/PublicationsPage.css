@@ -1,4 +1,3 @@
-@import '../../utilities/variables';
 
 .publication{
     margin: 6px 0px 20px 0px;
@@ -7,13 +6,13 @@
 .publication-info{
     margin-bottom: 40px;
     font-size: 22px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     color: #636363;
 }
 
 
 .publication-title, .publication-date, .publication-school{
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
 }
 
 .publication-title{
@@ -30,7 +29,7 @@
 
 .publication-school{
     font-size: 16px;
-    color: $principal-color;
+    color: #A22B2B;
     margin: 0px;
 }
 
@@ -40,7 +39,7 @@
 
 .publi-link:hover{
     text-decoration: none;
-    color: $principal-color;
+    color: #A22B2B;
 }
 
 

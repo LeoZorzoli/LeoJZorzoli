@@ -1,9 +1,8 @@
-@import '../../utilities/variables';
 
 .education-info{
     margin-bottom: 40px;
     font-size: 22px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     color: #636363;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .edu-title, .edu-date, .edu-school{
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
 }
 
 .edu-title{
@@ -29,7 +28,7 @@
 
 .edu-school{
     font-size: 16px;
-    color: $principal-color;
+    color: #A22B2B;
     margin: 0px;
 }
 

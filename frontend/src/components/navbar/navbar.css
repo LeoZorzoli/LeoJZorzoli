@@ -1,13 +1,11 @@
-@import '../../utilities/variables';
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 .active{
     text-decoration: underline;
 }
 
 .text-navbar{
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
 }
 
 .navbar-icon{
@@ -21,7 +19,7 @@
 }
 
 .logo:hover{
-    text-decoration-color: $principal-color;
+    text-decoration-color: #A22B2B;
 }
 
 .text1 {
@@ -33,12 +31,12 @@
 .text2 {
     margin: 0px;
     font-size: 34px;
-    color: $principal-color
+    color: #A22B2B
 }
 
 .text3 {
     font-size: 24px;
-    color: $principal-color
+    color: #A22B2B
 }
 
 .text3:hover {
@@ -51,7 +49,7 @@
 }
 
 .link-navbar{
-    color: $principal-color;
+    color: #A22B2B;
     font-size: 22px;
 }
 
@@ -71,7 +69,7 @@
 }
 
 .iconNavbar{
-    color: $principal-color;
+    color: #A22B2B;
 } 
 
 @media (max-width: 1200px) {

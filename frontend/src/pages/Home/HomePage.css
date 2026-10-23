@@ -1,9 +1,7 @@
-@import '../../utilities/variables';
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 .readMoreButton:hover{
-    background-color: $principal-color;
+    background-color: #A22B2B;
     color: white;
     text-decoration: none;
 }
@@ -17,23 +15,22 @@
 }
 
 .initialInfo{
-    font-family: $principal-font;
-    color: $principal-color;
+    font-family: 'Roboto Slab', serif;
+    color: #A22B2B;
     font-size: 32px;
     text-align: left;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .descriptionInfo{
     font-size: 22px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     text-align: left;
     color: #636363;
 }
 
 
 .icon{
-    color: $principal-color;
+    color: #A22B2B;
     margin: 70px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -95,5 +92,5 @@
 
 
 .webDeveloper{
-    color: $principal-color;
+    color: #A22B2B;
 }

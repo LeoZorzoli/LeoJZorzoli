@@ -1,21 +1,20 @@
-@import '../../utilities/variables';
 
 .bio-info{
     font-size: 22px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     color: #636363;
 }
 
 .bio-interest{
     font-size: 20px;
-    font-family: $principal-font;
+    font-family: 'Roboto Slab', serif;
     color: black;
 }
 
 .interests{
     font-size: 20px;
-    font-family: $principal-font;
-    color: $principal-color;
+    font-family: 'Roboto Slab', serif;
+    color: #A22B2B;
     list-style: none; /* Remove default bullets */
 }
 

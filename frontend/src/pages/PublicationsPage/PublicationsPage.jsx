@@ -1,5 +1,4 @@
-import React from 'react';
-import './PublicationsPage.scss';
+import './PublicationsPage.css';
 import publicationsList from '../../utilities/publicationsList';
 
 const Publication = ({ publication }) => {
@@ -13,7 +12,7 @@ const Publication = ({ publication }) => {
 
 const PublicationsPage = () => {
     return (
-        <div className="animate__animated animate__fadeIn">
+        <div>
             <p className="publication-info">Here I am going to upload all the interesting things that I will be posting on the internet 
                 whether they are designs, blogs, post or new ideas.</p>
             {publicationsList.map(publi => 
