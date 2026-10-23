@@ -2,7 +2,8 @@
 const MaskIcon = ({ src, size = 32, className = '' }) => (
   <span
     className={`mask-icon ${className}`.trim()}
-    style={{ '--icon': `url(${src})`, '--size': `${size}px` }}
+    // Comillas: Vite puede entregar los SVG chicos como data URI con espacios.
+    style={{ '--icon': `url("${src}")`, '--size': `${size}px` }}
     aria-hidden="true"
   />
 )
